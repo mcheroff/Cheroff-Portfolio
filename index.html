@@ -7,9 +7,12 @@
 		<meta name="description" content="">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="reveal.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+		<script src="jquery.reveal.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 	<body id="top">
 
@@ -17,7 +20,7 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="Michael Cheroff" /></a>
-					<h1><strong>I'm Michael</strong>: front-end developer and ardent traveler</h1>
+					<h1><strong>I'm Michael</strong>: front-end developer and aspiring explorer</h1>
 				</div>
 			</header>
 
@@ -40,96 +43,84 @@
 					<section id="two">
 						<h2>Recent Work</h2>
 						<div class="row">
+							
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb" data-toggle="modal" data-target="#giphyModal"><img src="images/thumbs/giphyapi.png" alt="" /></a>
+								<a href="#" class="image fit thumb big-link" data-reveal-id="giphymodal" data-animation="fade"><img src="images/thumbs/giphyapi.png" alt="" /></a>
 								<h3>Giphy API</h3>
 								<p>Application that utilizes the giphy.com API to display 10 gifs after submitting a search request.</p>
 							</article>
-							<div class="modal fade" id="giphyModal" role="dialog">
-						    	<div class="modal-dialog">
-						    
-						      <!-- justGo modal content-->
-						      	<div class="modal-content">
-							    	<div class="modal-header">
-							          <button type="button" class="close" data-dismiss="modal">&times;</button>
-							          <h4 class="modal-title">Giphy API Generator</h4>
-							        </div>
-							        <div class="modal-body">
-							        	<p>This gif generator queries the Giphy.com API for 10 random gifs for each button click. Each gif renders as a still image, but can be animated by clicking the image. The search bar to add more search buttons doesn’t currently function, so that is a feature I’ll be adding in the future.
-							        	<br>
-							        	<br>
-										Technologies I utilized: AJAX, jQuery, JavaScript, Materialize, Responsive Design.
-										<br>
-										<br>
-										Check it out here: <a href="https://giphyapigenerator.herokuapp.com" target="_blank">https://giphyapigenerator.herokuapp.com</a>
-										</p>
-							        </div>
-							        <div class="modal-footer">
-							          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							        </div>
-							      </div>
-							   	 </div>
+
+
+							<div id="giphymodal" class="reveal-modal">
+								<h1>Giphy API Generator</h1>
+								<p>This gif generator queries the Giphy.com API for 10 random gifs for each button click. Each gif renders as a still image, but can be animated by clicking the image. The search bar to add more search buttons doesn’t currently function, so that is a feature I’ll be adding in the future.
+							    <br>
+							    <br>
+								Technologies I utilized: AJAX, jQuery, JavaScript, Materialize, Responsive Design.
+								<br>
+								<br>
+								Check it out here: <a href="https://giphyapigenerator.herokuapp.com" target="_blank">https://giphyapigenerator.herokuapp.com</a>
+								</p>
+								<a class="close-reveal-modal">&#215;</a>
 							</div>
+
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb" data-toggle="modal" data-target="#finderModal"><img src="images/thumbs/friendfinder.png" alt="" /></a>
+								<a href="images/fulls/02.jpg" class="image fit thumb big-link" data-reveal-id="findermodal" data-animation="fade"><img src="images/thumbs/friendfinder.png" alt="" /></a>
 								<h3>Friend Finder</h3>
 								<p>Application that matches people based on responses to a list of questions.</p>
 							</article>
-							<div class="modal fade" id="finderModal" role="dialog">
-						    	<div class="modal-dialog">
-						    
-						      <!-- justGo modal content-->
-						      	<div class="modal-content">
-							    	<div class="modal-header">
-							          <button type="button" class="close" data-dismiss="modal">&times;</button>
-							          <h4 class="modal-title">Friend Finder</h4>
-							        </div>
-							        <div class="modal-body">
-							        	<p>This is a compatibility-based “Friend Finder” application. This full-stack application takes in the results of a user survey and then compares their responses to those from other users.
-							        	<br>
-							        	<br>
-										Technologies I utilized: Node.js, Express.js, NPM, Bootstrap.
-										<br>
-										<br>
-										Check it out here: <a href="https://friendfinerapp.herokuapp.com" target="_blank">https://friendfinerapp.herokuapp.com</a>
-										</p>
-							        </div>
-							        <div class="modal-footer">
-							          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							        </div>
-							      </div>
-							   	 </div>
+
+							<div id="findermodal" class="reveal-modal">
+								<h1>Friend Finder</h1>
+								<p>This is a compatibility-based “Friend Finder” application. This full-stack application takes in the results of a user survey and then compares their responses to those from other users.
+							    <br>
+							    <br>
+								Technologies I utilized: Node.js, Express.js, NPM, Bootstrap.
+								<br>
+								<br>
+								Check it out here: <a href="https://friendfinerapp.herokuapp.com" target="_blank">https://friendfinerapp.herokuapp.com</a>
+								</p>
+								<a class="close-reveal-modal">&#215;</a>
 							</div>
+
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb" data-toggle="modal" data-target="#trainModal"><img src="images/thumbs/trainscheduler.png" alt="" /></a>
+								<a href="images/fulls/06.jpg" class="image fit thumb big-link" data-reveal-id="justgomodal" data-animation="fade"><img src="images/thumbs/justgo.png" alt="" /></a>
+								<h3>justGo</h3>
+								<p>A collaborative project between myself and four other team members.</p>
+							</article>
+
+							<div id="justgomodal" class="reveal-modal">
+								<h1>justGo</h1>
+								<p>This was a really cool project that was developed between myself and four other team members. This application uses Home Away’s API to take in a user’s search criteria and then render a list of vacation rental listings that matches their input. This allows users to search for home rentals near the types of activities that they plan on doing during their trip. My role in this project was on the front-end team.
+							    <br>
+							    <br>
+								Technologies I utilized: JavaScript, Materialize, Responsive Design, Git collaboration.
+								<br>
+								<br>
+								Check it out here: <a href="http://just-go.herokuapp.com" target="_blank">just-go.herokuapp.com</a>
+								</p>
+								<a class="close-reveal-modal">&#215;</a>
+							</div>
+
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/03.jpg" class="image fit thumb big-link" data-reveal-id="trainmodal" data-animation="fade"><img src="images/thumbs/trainscheduler.png" alt="" /></a>
 								<h3>Train Scheduler</h3>
 								<p>Application that uses Moment.js to calculate trains times and a Firebase database to save train information.</p>
 							</article>
-							<div class="modal fade" id="trainModal" role="dialog">
-						    	<div class="modal-dialog">
-						    
-						      <!-- justGo modal content-->
-						      	<div class="modal-content">
-							    	<div class="modal-header">
-							          <button type="button" class="close" data-dismiss="modal">&times;</button>
-							          <h4 class="modal-title">justGo</h4>
-							        </div>
-							        <div class="modal-body">
-							        	<p>This is a train-scheduling app that I started at the beginning of my education at The Coding Boot Camp at UT Austin. As of this writing, it is currently unfinished, but I intend to return to it for future development. It’s intended use is to utilize Moment.js to provide a train schedule that allows the user to view train times and add their own entries if they wish.
-							        	<br>
-							        	<br>
-										Technologies I intended to utilize: jQuery, Moment.js, Firebase, Bootstrap.
-										<br>
-										<br>
-										Check out my code here: <a href="https://github.com/mcheroff/Train-Scheduler" target="_blank">https://github.com/mcheroff/Train-Scheduler</a>
-										</p>
-							        </div>
-							        <div class="modal-footer">
-							          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							        </div>
-							      </div>
-							   	 </div>
+
+							<div id="trainmodal" class="reveal-modal">
+								<h1>Train Scheduler</h1>
+								<p>This is a train-scheduling app that I started at the beginning of my education at The Coding Boot Camp at UT Austin. As of this writing, it is currently unfinished, but I intend to return to it for future development. It’s intended use is to utilize Moment.js to provide a train schedule that allows the user to view train times and add their own entries if they wish.
+							    <br>
+							    <br>
+								Technologies I intend to utilize: jQuery, Moment.js, Firebase, Bootstrap.
+								<br>
+								<br>
+								Check out my code here: <a href="https://github.com/mcheroff/Train-Scheduler" target="_blank">https://github.com/mcheroff/Train-Scheduler</a>
+								</p>
+								<a class="close-reveal-modal">&#215;</a>
 							</div>
+
 							<!-- <article class="6u$ 12u$(xsmall) work-item">
 								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
 								<h3>Quam neque phasellus</h3>
@@ -140,46 +131,30 @@
 								<h3>Nunc enim commodo aliquet</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article> -->
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb" data-toggle="modal" data-target="#justgoModal"><img src="images/thumbs/justgo.png" alt="" /></a>
-								<h3>justGo</h3>
-								<p>A collaborative project between myself and four other team members.</p>
-							</article>
-							<div class="modal fade" id="justgoModal" role="dialog">
-						    	<div class="modal-dialog">
-						    
-						      <!-- justGo modal content-->
-						      	<div class="modal-content">
-							    	<div class="modal-header">
-							          <button type="button" class="close" data-dismiss="modal">&times;</button>
-							          <h4 class="modal-title">justGo</h4>
-							        </div>
-							        <div class="modal-body">
-							        	<p>This was a really cool project that was developed between myself and four other team members. This application uses Home Away’s API to take in a user’s search criteria and then render a list of vacation rental listings that matches their input. This allows users to search for home rentals near the types of activities that they plan on doing during their trip. My role in this project was on the front-end team.
-							        	<br>
-							        	<br>
-										Technologies I utilized: JavaScript, Materialize, Responsive Design, Git collaboration.
-										<br>
-										<br>
-										Check it out here: <a href="http://just-go.herokuapp.com" target="_blank">just-go.herokuapp.com</a>
-										</p>
-							        </div>
-							        <div class="modal-footer">
-							          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							        </div>
-							      </div>
-							   	 </div>
-							</div>
 						</div>
 						<br>
 						<h2>Current Projects</h2>
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb" data-toggle="modal" data-target="#kbphotoModal"><img src="images/thumbs/kbphotography.png" alt="" /></a>
-								<h3>Kathryn Bodden Photography</h3>
+								<a href="images/fulls/01.jpg" class="image fit thumb" data-reveal-id="kbphotomodal" data-animation="fade"><img src="images/thumbs/kbphotography.png" alt="" /></a>
+								<h3>Katie Bodden Photography</h3>
 								<p>Currently developing a photography site to showcase the portfolio of an Austin-based freelance photographer. A work in progress!</p>
 							</article>
 						</div>
+
+						<div id="kbphotomodal" class="reveal-modal">
+								<h1>Katie Bodden Photography</h1>
+								<p>This is a personal freelance project that I also used as my full-stack final project submission for The Coding Boot Camp at UT Austin. It’s a simple photography portfolio site developed for an Austin-based photographer that runs on a Node/Express web server. The blog page scrapes posts from a Tumblr blog, saves the content to a MongoDB database, and then renders the content to the HTML page. Most of the images and content are dummy fillers that are intended to be placeholders for the time being. I’m currently working with the client to further develop this site. The gallery images are actual images owned by the client, while the rest are stock images.</p>
+						        <br>
+						        
+						        <p>Technologies I utilized: Node.js, Express.js, RequireJS, NPM, jQuery, AJAX, MongoDB, Materialize.</p>
+						        <br>
+						         
+						        <p>Check it out here: <a href="https://kbphotography.herokuapp.com" target="_blank">https://kbphotography.herokuapp.com</a></p>
+						        
+								<a class="close-reveal-modal">&#215;</a>
+							</div>
+
 						<div class="modal fade" id="kbphotoModal" role="dialog">
 						    <div class="modal-dialog">
 						    
